@@ -1,0 +1,12 @@
+def name_surname_join(name, surname):
+    if len(name) == 0 or len(surname) == 0:
+        print("Please, enter both your name and surname.")
+    else:
+        return "-->".join([name, surname]) # you can decide what you put between " ".
+        
+name = input("Enter the name: ")
+surname = input("Enter the surname: ")
+full_name = name_surname_join(name, surname)
+
+if full_name:
+    print(f"Full name is {full_name}.")
