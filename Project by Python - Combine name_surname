@@ -10,3 +10,16 @@ full_name = name_surname_join(name, surname)
 
 if full_name:
     print(f"Full name is {full_name}.")
+
+
+"""
+
+def name_surname_join(*args): # combine name and surname by using *args argument
+    return "-->".join(args) # you can decide what to put between " " 
+
+name = input("Enter the name: ")
+surname = input("Enter the surname: ")
+full_name = name_surname_join(name, surname)
+print(full_name)
+
+"""
