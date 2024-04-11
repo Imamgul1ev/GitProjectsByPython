@@ -1,0 +1,12 @@
+def name_surname_division(name_surname):
+    if len(name_surname.split()) != 2:
+        print("You entered only the name, please enter the surname also.")
+    else:
+        name = name_surname.split()[0]
+        surname = name_surname.split()[1]
+        return name, surname
+
+input_name_surname = input("Enter the name and surname: ")
+name, surname = name_surname_division(input_name_surname)
+print("Name:", name)
+print("Surname:", surname)
