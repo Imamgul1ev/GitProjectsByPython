@@ -1,0 +1,12 @@
+def validation():
+    adress = input("Enter an email adress: ")
+    
+    # magamed.imamguliev@student.unime.it
+    
+    while not(('.' in adress and '@' in adress)):
+        print("Entered is not an email.")
+        adress = input("Enter an email adress again: ")
+    else:
+        print(f"{adress} is a sufficient email adress.")
+        
+validation()
